@@ -8,11 +8,10 @@ def key_for_min_value(name_hash)
     return ans
   end
   
-  temp = 0
   name_hash.each do |key, value|
-    temp = value
     ans = key
   end
+  temp = name_hash[ans]
   
   name_hash.each do |key, value|
     if temp > value
