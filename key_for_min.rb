@@ -8,9 +8,7 @@ def key_for_min_value(name_hash)
     return ans
   end
   
-  name_hash.each do |key, value|
-    ans = key
-  end
+  name_hash.each_key
   temp = name_hash[ans]
   
   name_hash.each do |key, value|
