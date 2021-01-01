@@ -4,9 +4,9 @@
 def key_for_min_value(name_hash)
   
   ans = nil
-  if name_hash.is_empty?
-  
-  
+  if name_hash.empty?
+    return ans
+  end
   
   temp = 0
   name_hash.each do |key, value|
